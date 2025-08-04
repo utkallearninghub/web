@@ -1,0 +1,203 @@
+.active {
+    background-color: #1d4ed8;
+}
+
+.dnav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6vw 5.5vw 0.6vw 2.5vw;
+    background-color: white;
+    color: black;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 1px rgb(215, 215, 215);
+    z-index: 1000;
+}
+
+.dnav-left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dnav-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.dnav-image-contener {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dnav-logo-image {
+    width: 2.8vw;
+    height: 2.8vw;
+}
+
+.dnav-company-text {
+    font-size: 1.2vw;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 0.5vw;
+}
+
+.dnav-category-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8vw 1vw;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    margin-left: 8vw;
+}
+
+.dnav-category-text {
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: #6e8efb;
+}
+
+.dnav-category-icon {
+    margin-left: 0.5vw;
+    color: #6e8efb;
+}
+
+.dnav-profile-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dnav-profile-name {
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    margin-right: 1vw;
+}
+
+.dnav-search-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 20vw;
+    padding: 0.8vw 0.7vw;
+    border-radius: 10px;
+    margin-right: 2vw;
+    background-color: rgba(110, 142, 251, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.dnav-search {
+    width: 100%;
+    font-size: 1vw;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+}
+
+.search-icon {
+    width: 1.5vw;
+    height: 1.5vw;
+    color: #6e8efb;
+    margin-right: 0.5vw;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .dnav-main {
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-left-content {
+        width: 100%;
+    }
+
+    .dnav-menu {
+        display: flex;
+        width: 2.25rem;
+        height: 2rem;
+    }
+
+    .dnav-logo-image {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .dnav-company-text {
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+        font-weight: 600;
+    }
+
+    .dnav-category-box {
+        padding: 0.8rem 1rem;
+        margin-left: 2rem;
+        border-radius: 5px;
+    }
+
+    .dnav-category-text {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .dnav-category-icon {
+        margin-left: 0.5rem;
+    }
+
+    .dnav-search-box {
+        display: none;
+    }
+
+    .dnav-profile-name {
+        font-size: 1rem;
+        margin-right: 1rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .dnav-main {
+        padding: 0.8rem 1rem;
+    }
+
+    .nav-left-content {
+        width: 100%;
+    }
+
+    .dnav-menu {
+        display: flex;
+        width: 2.25rem;
+        height: 2rem;
+    }
+
+    .dnav-logo-image {
+        width: 2.3rem;
+        height: 2.3rem;
+        margin-left: 0.5rem;
+    }
+
+    .dnav-company-text {
+        display: none;
+    }
+
+    .dnav-category-box {
+        display: none;
+    }
+
+    .dnav-profile-name {
+        font-size: 1rem;
+        margin-right: 0.2rem;
+    }
+
+}

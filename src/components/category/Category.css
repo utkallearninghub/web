@@ -1,0 +1,145 @@
+.category-main-contener {
+    padding: 2vw 11vw 0 11vw;
+}
+
+.category-top-text {
+    font-size: 1.8vw;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.category-contener {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.category-box {
+    width: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1vw 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-top: 1vw;
+    background-color: #fff;
+}
+
+.category-box:hover {
+    transform: translateY(-5px);
+}
+
+.category-image-box {
+    padding: 1vw;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    /* Optional consistent background */
+}
+
+.category-image {
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.category-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-top: 0.7vw;
+}
+
+.category-explore-now {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+    margin-top: 0.9vw;
+    color: #555;
+}
+
+/* ========== Responsive Styles ========== */
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .category-main-contener {
+        padding: 2rem 1rem;
+    }
+
+    .category-contener {
+        justify-content: space-between;
+    }
+
+    .category-box {
+        width: 48%;
+        margin-top: 1rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    .category-image-box {
+        padding: 1rem;
+    }
+
+    .category-image {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .category-title {
+        font-size: 1.2rem;
+        margin-top: 0.3rem;
+    }
+
+    .category-explore-now {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .category-top-text {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .category-main-contener {
+        padding: 2rem 1rem;
+    }
+
+    .category-contener {
+        justify-content: space-between;
+    }
+
+    .category-box {
+        width: 48%;
+        margin-top: 0.8rem;
+        padding: 1rem 0 0.5rem 0;
+    }
+
+    .category-image-box {
+        padding: 1rem;
+    }
+
+    .category-image {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .category-title {
+        font-size: 1rem;
+        margin-top: 0.3rem;
+    }
+
+    .category-explore-now {
+        font-size: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .category-top-text {
+        font-size: 1.5rem;
+    }
+}

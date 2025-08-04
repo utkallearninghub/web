@@ -1,0 +1,216 @@
+/* Form Styles */
+.loginform {
+    width: 60%;
+    padding: 0 2vw 0 2vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-login {
+    color: #333;
+    margin-bottom: 1.5vw;
+    text-align: center;
+    font-size: 1.8vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 1.5vw;
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
+    color: #555;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-input {
+    width: 100%;
+    padding: 1vw;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1vw;
+    transition: border-color 0.3s;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* Add this line */
+}
+
+.login-input:focus {
+    border-color: #6e8efb;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(110, 142, 251, 0.2);
+}
+
+.login-button {
+    width: 100%;
+    padding: 1vw;
+    background: linear-gradient(to right, #6e8efb, #a777e3);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 2vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(110, 142, 251, 0.3);
+}
+
+.login-register-toggle {
+    margin-top: 2vw;
+    text-align: center;
+    font-size: 1vw;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-register-toggle span {
+    color: #6e8efb;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1vw;
+    transition: color 0.2s;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-register-toggle span:hover {
+    color: #a777e3;
+    text-decoration: underline;
+}
+
+/* Auth Button logos (Mobile, Google, Apple) */
+.other-login-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    font-size: 1vw;
+    color: #666;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.auth-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+    gap: 20px;
+}
+
+.auth-buttons button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8vw;
+    border: 1px solid #6e8efb;
+    border-radius: 6px;
+    background-color: white;
+    width: 20%;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.auth-buttons button img {
+    width: 1.1vw;
+    height: 1.1vw;
+}
+
+.auth-buttons button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-btn-mobile {
+    background-color: #e0e0e0;
+    /* Background color for mobile button */
+}
+
+.auth-btn-google {
+    background-color: #f4f4f4;
+    /* Background color for Google button */
+}
+
+.auth-btn-apple {
+    background-color: #f0f0f0;
+    /* Background color for Apple button */
+}
+
+@media (max-width: 768px) {
+    .loginform {
+        width: 80%;
+        padding: 1rem 2rem 0 2rem;
+    }
+
+    .text-login {
+        font-size: 1.8rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .login-label {
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .login-input {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .login-button {
+        padding: 1rem;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .login-register-toggle {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .login-register-toggle span {
+        font-size: 1rem;
+    }
+
+    .other-login-text {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+
+    .auth-buttons {
+        margin-top: 1rem;
+        gap: 20px;
+    }
+
+    .auth-buttons button {
+        padding: 0.8rem;
+    }
+
+    .auth-buttons button img {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .loginform {
+        width: 100%;
+        padding: 0.5rem 1rem 0 1rem;
+    }
+
+}

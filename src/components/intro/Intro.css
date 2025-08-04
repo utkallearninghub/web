@@ -1,0 +1,262 @@
+.intro-contener {
+    padding: 0 11vw;
+}
+
+.intro-top-contener {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intro-content-contener {
+    width: 100%;
+}
+
+.intro-text {
+    font-size: 1.8vw;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro-subtext {
+    font-size: 1.2vw;
+    margin-top: 0.7vw;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.intro-image-contener {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-image {
+    width: 30vw;
+    height: auto;
+}
+
+/* App Contener */
+.intro-app-contener {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 2vw;
+    gap: 1vw;
+}
+
+.app-contener {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 0.8vw 1vw;
+}
+
+.app-text {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1vw;
+}
+
+.app-image {
+    width: 2.5vw;
+    height: auto;
+}
+
+.app-subheading-text {
+    font-size: 0.7vw;
+}
+
+.app-heading-text {
+    font-size: 1vw;
+    font-weight: 700;
+    margin-top: 0.2vw;
+}
+
+/* Intro Down Contener */
+.intro-down-contener {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.intro-down-box {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw 0;
+}
+
+.intro-box-image {
+    width: 4vw;
+    height: auto;
+}
+
+.intro-box-heading-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2vw;
+    font-weight: 700;
+    margin-top: 1vw;
+}
+
+.intro-box-subheading-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1vw;
+    margin-top: 0.2vw;
+    color: #555;
+}
+
+@media (max-width: 1024px) {
+    .intro-contener {
+        padding: 0 1rem;
+    }
+
+    .intro-top-contener {
+        flex-direction: column;
+        padding: 2rem 0; 
+    }
+
+    .intro-content-contener {
+        width: 100%;
+    }
+
+    .intro-text {
+        font-size: 2.5rem;
+    }
+
+    .intro-subtext {
+        font-size: 1.2rem;
+        margin-top: 0.7rem;
+    }
+
+    .intro-image-contener {
+        width: 100%;
+    }
+
+    .intro-image {
+        display: none;
+    }
+
+    /* App Contener */
+    .intro-app-contener {
+        margin-top: 2rem;
+        gap: 1rem;
+    }
+
+    .app-contener {
+        border-radius: 8px;
+        padding: 0.8rem 1rem;
+    }
+
+    .app-text {
+        margin-left: 0.8rem;
+    }
+
+    .app-image {
+        width: 2.5rem;
+    }
+
+    .app-subheading-text {
+        font-size: 0.8rem;
+    }
+
+    .app-heading-text {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    /* Intro Down Contener */
+    .intro-down-contener {
+        width: 100%;
+    }
+
+    .intro-down-box {
+        width: 50%;
+        padding: 1rem 0;
+    }
+
+    .intro-box-image {
+        width: 4rem;
+    }
+
+    .intro-box-heading-text {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    .intro-box-subheading-text {
+        font-size: 1rem;
+        margin-top: 0.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-top-contener {
+        padding: 2rem 0; 
+    }
+
+    .intro-text {
+        font-size: 1.5rem;
+    }
+
+    .intro-subtext {
+        font-size: 1rem;
+        margin-top: 0.7rem;
+    }
+
+    /* App Contener */
+    .intro-app-contener {
+        margin-top: 1rem;
+        gap: 1rem;
+    }
+
+    .app-contener {
+        border-radius: 8px;
+        padding: 0.6rem 0.8rem;
+    }
+
+    .app-text {
+        margin-left: 0.6rem;
+    }
+
+    .app-image {
+        width: 2.3rem;
+    }
+
+    .app-subheading-text {
+        font-size: 0.6rem;
+    }
+
+    .app-heading-text {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    /* Intro Down Contener */
+    .intro-down-box {
+        width: 50%;
+        padding: 1rem 0;
+    }
+
+    .intro-box-image {
+        width: 3.5rem;
+    }
+
+    .intro-box-heading-text {
+        font-size: 1rem;
+        margin-top: 0.8rem;
+    }
+
+    .intro-box-subheading-text {
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+    }
+}

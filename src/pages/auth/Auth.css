@@ -1,0 +1,53 @@
+.auth-contener {
+    height: 100vh;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.auth-content-contener {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-form-contener {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image {
+    width: 70%;
+    height: auto;
+}
+
+.login-text {
+    font-size: 1.8vw;
+    margin-top: 3rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-subtext {
+    font-size: 1.2vw;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media (max-width: 768px) {
+    .auth-content-contener {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .auth-contener {
+        padding: 0 2rem;
+    }
+}
