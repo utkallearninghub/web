@@ -15,8 +15,8 @@ const MainLayout = ({ children }) => {
     <>
       {isDashboard ? <IntroNavbar /> : <DashboardNavbar showSidebar={showNav} setShowSidebar={setShowNav}/>}
 
-      <div className="main-content">
-        {!isDashboard && <Sidebar show={showNav} setShow={setShowNav} />}
+      <div className={showNav ? "main-content activeSidebar" : "main-content"}>
+        {!isDashboard && <Sidebar show={showNav} setShow={setShowNav}/>}
         {children}
       </div>
       <Footer />

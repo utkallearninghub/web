@@ -104,78 +104,34 @@
     }
 
     .sidebar-items {
-        flex: 1;
-        overflow-y: auto;
-        overflow-x: hidden;
         padding: 0.8rem;
     }
 
     .sidebarItems {
-        padding: 0.8vw;
-    }
-
-    .sidebarItems:hover {
-        background: rgba(110, 142, 251, 0.2);
-    }
-
-    .sidebarItems.activeItem {
-        background-color: rgba(110, 142, 251, 0.2);
+        padding: 0.8rem;
     }
 
     .sidebarItemText {
-        width: 100%;
-        transition: all 0.5s;
-        margin-left: 0.8vw;
-        font-size: 0.9vw;
-        font-weight: 600;
-        font-family: 'Open Sans', sans-serif;
-        color: #535353;
-    }
-
-    .sidebarItemText.activeItem {
-        color: var(--primary-color);
+        margin-left: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .sidebar-icon {
-        width: 1.5vw;
-        height: 1.5vw;
-        color: #535353;
-    }
-
-    .sidebar-icon.activeItem {
-        color: var(--primary-color);
+        width: 1.5rem;
+        height: 1.5rem;
     }
 
     .border {
-        width: 100%;
-        height: 0.5px;
-        background-color: #c7c7c7;
-        margin: 0.5vw 0;
+        margin: 0.5rem 0;
     }
 
     .sidebar-policy-box {
-        width: 100%;
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-        color: #535353;
-        font-size: 0.9vw;
-        font-weight: 600;
-        padding: 0 2vw;
-        font-family: 'Open Sans', sans-serif;
-    }
-
-    .sidebar-policy {
-        cursor: pointer;
-    }
-
-    .sidebar-policy:hover {
-        color: var(--primary-color);
+        font-size: 0.9rem;
+        padding: 0 2rem;
     }
 
     .sidebar-space {
-        height: 0.8vw;
+        height: 0.8rem;
     }
 
     /* CSS rules for mobile devices go here */
@@ -226,20 +182,47 @@
     } */
 }
 
-@media (max-width: 767px) {
-    /* CSS rules for mobile devices go here */
-
+@media (max-width: 1024px) {
     .sidenav {
-        background: #011627;
+        width: 16rem;
         position: absolute;
-        height: 95vh;
-        padding: 0 0px;
         left: -100%;
-        transition: all 0.5s;
     }
 
     .sidenav.active {
         left: 0;
-        width: 40%;
+        width: -100%;
     }
+
+    .sidebar-items {
+        padding: 0.6rem;
+    }
+
+    .sidebarItems {
+        padding: 0.6rem;
+    }
+
+    .sidebarItemText {
+        margin-left: 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .sidebar-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .border {
+        margin: 0.3rem 0;
+    }
+
+    .sidebar-policy-box {
+        font-size: 0.9rem;
+        padding: 0 1.8rem;
+    }
+
+    .sidebar-space {
+        height: 0.6rem;
+    }
+
 }

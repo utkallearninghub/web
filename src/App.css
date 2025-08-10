@@ -3,14 +3,19 @@
   margin: 0;
 }
 
-body{
+body {
   width: 100%;
   height: 100vh;
   margin: 0;
 }
 
-.main-content{
+.main-content {
   display: flex;
   justify-content: start;
   align-items: start;
+  transition: all 0.5s;
+}
+
+.main-content.activeSidebar {
+  margin-left: 16rem;
 }

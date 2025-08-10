@@ -1,0 +1,30 @@
+.dslider {
+  position: relative;
+  width: 90%;
+  height: 14vw;
+  overflow: hidden;
+  margin: auto;
+  z-index: 1;
+  margin-top: 2vw;
+}
+
+.dslide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.dslide.active {
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .dslider {
+    width: 95%;
+    height: 43vw;
+  }
+}

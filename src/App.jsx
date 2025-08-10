@@ -8,6 +8,8 @@ import Auth from './pages/auth/Auth';
 import Home from './pages/home/Home';
 import Dashboard from './pages/dashboard/Dashboard';
 import MainLayout from './MainLayout';
+import ScrollToTop from './ScrollToTop';
+import BatchDetails from './components/batch/BatchDetails';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,11 +28,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes> */}
+      <ScrollToTop />
       <MainLayout>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/dashboard" element={<Home />} />
+          <Route path="/batch-details/:id" element={<BatchDetails />} />
         </Routes>
       </MainLayout>
     </div>
