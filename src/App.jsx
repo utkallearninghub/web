@@ -9,7 +9,7 @@ import Home from './pages/home/Home';
 import Dashboard from './pages/dashboard/Dashboard';
 import MainLayout from './MainLayout';
 import ScrollToTop from './ScrollToTop';
-import BatchDetails from './components/batch/BatchDetails';
+import BatchDetails from './pages/batchDetails/BatchDetails';
 
 function App() {
   const [count, setCount] = useState(0)

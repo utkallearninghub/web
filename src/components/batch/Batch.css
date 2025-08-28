@@ -15,6 +15,12 @@
 
 .batch-remark-box {
     margin-top: 0.5vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .batch-remark {
@@ -56,6 +62,7 @@
     width: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .batch-info {
@@ -128,4 +135,133 @@
     background: #6e8efb;
     color: white;
     border-color: #6e8efb;
+}
+
+@media (max-width: 1024px) {
+    .main-batch {
+        width: 95%;
+        margin-top: 2rem;
+    }
+
+    .batch-main-text {
+        font-size: 1.2rem;
+    }
+
+    .batch-remark-box {
+        margin-top: 0.5rem;
+    }
+
+    .batch-remark {
+        font-size: 1rem;
+        margin-right: 2rem;
+    }
+
+    .batch-main-title {
+        font-size: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .batches-container {
+        width: 100%;
+        gap: 2%;
+        margin-top: 1rem;
+    }
+
+    .batch-card {
+        width: 49%;
+        margin-top: 1rem;
+    }
+
+    .batch-info {
+        padding: 1rem 0;
+    }
+
+    .batch-language {
+        padding: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .batch-title {
+        font-size: 1.2rem;
+        margin-top: 0.7rem;
+    }
+
+    .batch-desc-container {
+        margin-top: 0.6rem;
+    }
+
+    .batch-desc-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .batch-desc-title {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .main-batch {
+        width: 95%;
+        margin-top: 1.8rem;
+    }
+
+    .batch-main-text {
+        font-size: 1rem;
+    }
+
+    .batch-remark-box {
+        margin-top: 0.5rem;
+    }
+
+    .batch-remark {
+        font-size: 0.8rem;
+        margin-right: 1.8rem;
+    }
+
+    .batch-main-title {
+        font-size: 1rem;
+        margin-top: 1.8rem;
+    }
+
+    .batches-container {
+        width: 100%;
+        margin-top: 0.6rem;
+    }
+
+    .batch-card {
+        width: 49%;
+        margin-top: 0.8rem;
+    }
+
+    .batch-info {
+        padding: 0.8rem 0;
+    }
+
+    .batch-language {
+        padding: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .batch-title {
+        font-size: 1rem;
+        margin-top: 0.7rem;
+    }
+
+    .batch-desc-container {
+        margin-top: 0.6rem;
+    }
+
+    .batch-desc-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .batch-desc-title {
+        font-size: 0.7rem;
+        margin-left: 0.5rem;
+    }
+
 }

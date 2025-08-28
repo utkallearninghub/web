@@ -7,9 +7,11 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0;
+  background-color: #F8F8F8;
 }
 
 .main-content {
+  width: 100%;
   display: flex;
   justify-content: start;
   align-items: start;
@@ -18,4 +20,20 @@ body {
 
 .main-content.activeSidebar {
   margin-left: 16rem;
+}
+
+.content {
+  width: 83%;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+  }
 }

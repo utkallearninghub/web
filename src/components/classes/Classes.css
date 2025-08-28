@@ -1,0 +1,196 @@
+.cl-main {
+    width: 100%;
+}
+
+.cl-main-text {
+    width: 100%;
+    font-size: 1.2vw;
+    font-weight: 600;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cl-box {
+    width: 101%;
+    margin-top: 0.5vw;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.cl-card {
+    width: 24%;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.cl-card:hover {
+    transform: translateY(-2px);
+}
+
+.cl-image {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cl-info {
+    padding: 1vw 0;
+}
+
+.cl-language-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #535353;
+    gap: 0.5vw;
+}
+
+.cl-language {
+    padding: 0.2vw;
+    border: #535353 solid 0.5px;
+    border-radius: 3px;
+    font-size: 0.7vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.cl-duration {
+    border-radius: 3px;
+    font-size: 0.9vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cl-title {
+    font-size: 1vw;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0.7vw;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.cl-educator {
+    font-size: 0.9vw;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0.3vw;
+    overflow: hidden;
+    color: #535353;
+}
+
+.cl-date {
+    font-size: 0.9vw;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0.3vw;
+    overflow: hidden;
+    color: #535353;
+}
+
+@media (max-width: 1024px) {
+
+    .cl-main-text {
+        font-size: 1.2rem;
+    }
+
+    .cl-box {
+        width: 101%;
+        margin-top: 0.5rem;
+        gap: 1%;
+    }
+
+    .cl-card {
+        width: 49%;
+        margin-top: 1rem;
+    }
+
+    .cl-info {
+        padding: 1rem 0;
+    }
+
+    .cl-language-box {
+        gap: 0.5rem;
+    }
+
+    .cl-language {
+        padding: 0.2rem;
+        font-size: 0.7rem;
+    }
+
+    .cl-duration {
+        font-size: 0.9rem;
+    }
+
+    .cl-title {
+        font-size: 1rem;
+        margin-top: 0.7rem;
+    }
+
+    .cl-educator {
+        font-size: 0.9rem;
+        margin-top: 0.3rem;
+    }
+
+    .cl-date {
+        font-size: 0.9rem;
+        margin-top: 0.3rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .cl-main-text {
+        font-size: 1rem;
+    }
+
+    .cl-box {
+        width: 101%;
+        margin-top: 0.5rem;
+        gap: 1%;
+    }
+
+    .cl-card {
+        width: 49%;
+        margin-top: 0.8rem;
+    }
+
+    .cl-info {
+        padding: 0.8rem 0;
+    }
+
+    .cl-language-box {
+        gap: 0.5rem;
+    }
+
+    .cl-language {
+        padding: 0.2rem;
+        font-size: 0.6rem;
+    }
+
+    .cl-duration {
+        font-size: 0.8rem;
+    }
+
+    .cl-title {
+        font-size: 0.8rem;
+        margin-top: 0.7rem;
+    }
+
+    .cl-educator {
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
+    }
+
+    .cl-date {
+        font-size: 0.7rem;
+        margin-top: 0.3rem;
+    }
+}

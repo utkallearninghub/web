@@ -13,11 +13,14 @@ const MainLayout = ({ children }) => {
 
   return (
     <>
-      {isDashboard ? <IntroNavbar /> : <DashboardNavbar showSidebar={showNav} setShowSidebar={setShowNav}/>}
+      {isDashboard ? <IntroNavbar /> : <DashboardNavbar showSidebar={showNav} setShowSidebar={setShowNav} />}
 
       <div className={showNav ? "main-content activeSidebar" : "main-content"}>
-        {!isDashboard && <Sidebar show={showNav} setShow={setShowNav}/>}
-        {children}
+        {!isDashboard && <Sidebar show={showNav} setShow={setShowNav} />}
+        <div className='content'>
+          {children}
+        </div>
+
       </div>
       <Footer />
     </>
