@@ -10,6 +10,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import MainLayout from './MainLayout';
 import ScrollToTop from './ScrollToTop';
 import BatchDetails from './pages/batchDetails/BatchDetails';
+import VideoPlayer from './pages/videoPLayer/VideoPlayer';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -35,6 +36,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/dashboard" element={<Home />} />
           <Route path="/batch-details/:id" element={<BatchDetails />} />
+          <Route path="/playing-video/:id" element={<VideoPlayer />} />
         </Routes>
       </MainLayout>
     </div>

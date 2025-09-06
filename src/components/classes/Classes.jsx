@@ -1,9 +1,19 @@
 import React from 'react';
 import "./Classes.css";
+import { useNavigate } from 'react-router-dom';
 
 import class_1 from '../../assets/images/class_1.png';
 
-function Classes( { headText } ) {
+function Classes({ headText }) {
+    const navigate = useNavigate();
+
+    const handleClassClick = (id) => {
+        const selectedClass = classesData.find(item => item.id === id);
+
+        navigate(`/playing-video/${id}`, {
+            state: { classData: selectedClass }
+        });
+    };
 
     const classesData = [
         {
@@ -32,7 +42,10 @@ function Classes( { headText } ) {
 
             <div className='cl-box'>
                 {classesData.map((item) => (
-                    <div className='cl-card' key={item.id}>
+                    <div
+                        className='cl-card'
+                        key={item.id}
+                        onClick={() => handleClassClick(item.id)}>
                         <img src={item.image} alt={item.title} className='cl-image' />
 
                         <div className='cl-info'>

@@ -131,7 +131,7 @@
 
     .cl-title {
         font-size: 1rem;
-        margin-top: 0.7rem;
+        margin-top: 0.4rem;
     }
 
     .cl-educator {
@@ -180,17 +180,17 @@
     }
 
     .cl-title {
-        font-size: 0.8rem;
-        margin-top: 0.7rem;
+        font-size: 0.9rem;
+        margin-top: 0.4rem;
     }
 
     .cl-educator {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         margin-top: 0.3rem;
     }
 
     .cl-date {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         margin-top: 0.3rem;
     }
 }

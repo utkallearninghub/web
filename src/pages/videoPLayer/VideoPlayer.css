@@ -1,0 +1,346 @@
+.video-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    background: #000000;
+}
+
+.video-player {
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.video-back {
+    color: white;
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 10) 0%, transparent 40%);
+}
+
+.video-back-icon{
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 1vw 2vw;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 10) 0%, transparent 40%);
+}
+
+.video-track-box {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+
+.video-track-timer {
+    color: white;
+    margin-bottom: 1vw;
+    font-size: 1vw;
+}
+
+.video-track-bar {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 6px;
+    background: linear-gradient(to right,
+            rgb(4, 0, 255) 0%,
+            rgb(4, 0, 255) var(--value, 0%),
+            #aaaaaa var(--value, 0%),
+            #aaaaaa 100%);
+    outline: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide thumb (Chrome, Safari, Edge) */
+.video-track-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0;
+    height: 0;
+}
+
+/* Hide thumb (Firefox) */
+.video-track-bar::-moz-range-thumb {
+    border: none;
+    width: 0;
+    height: 0;
+}
+
+/* Hide thumb (IE/Edge) */
+.video-track-bar::-ms-thumb {
+    border: none;
+    width: 0;
+    height: 0;
+}
+
+.video-action-box {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.play-pause-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.action-btn {
+    color: white;
+    width: 2.3vw;
+    height: 2.3vw;
+    cursor: pointer;
+}
+
+/* Volume Section */
+.video-volume-box {
+    display: flex;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+.video-volume-btn {
+    color: white;
+    width: 2.3vw;
+    height: 2.3vw;
+    transition: 0.5s ease;
+}
+
+.video-volume-bar {
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.video-volume-box:hover .video-volume-bar {
+    opacity: 1;
+}
+
+.video-volume-box:hover .video-volume-btn {
+    opacity: 1;
+    width: 2vw;
+    height: 2vw;
+}
+
+.video-settings-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2vw;
+}
+
+/* Video Chat Section */
+.video-comments-box {
+    width: 0%;
+    height: 100vh;
+    transition: 0.5s ease;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.video-comments-box.show {
+    width: 35%;
+}
+
+/* Chat close section */
+.video-comments-box-close.show {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+    padding: 1vw;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.video-comments-box-close {
+    display: none;
+}
+
+.video-comments-close-text {
+    font-size: 1vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.video-comments-close-icon {
+    width: 1vw;
+    height: 1vw;
+    cursor: pointer;
+}
+
+/* video comments section */
+.video-comments-sction.show {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.video-comment-box {
+    width: 100%;
+    background-color: white;
+    padding: 0.7vw 1vw;
+    box-sizing: border-box;
+    margin-top: 0.2vw;
+    cursor: pointer;
+}
+
+.video-comments-sction {
+    display: none;
+}
+
+.video-comment-name-box {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+    gap: 0.5vw;
+}
+
+.video-comment-name {
+    font-size: 0.9vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.video-comment-date {
+    font-size: 0.8vw;
+    font-family: 'Open Sans', sans-serif;
+    color: #535353;
+}
+
+.video-comment-image {
+    border-radius: 30px;
+    width: 1.2vw;
+    height: 1.2vw;
+    cursor: pointer;
+}
+
+.video-comment {
+    font-size: 0.9vw;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0.5vw 0.5vw 0 0;
+    box-sizing: border-box;
+}
+
+.video-comment-like-box {
+    width: 3.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4vw;
+    background-color: rgb(226, 226, 226);
+    padding: 0.3vw;
+    box-sizing: border-box;
+    margin-top: 0.7vw;
+    border-radius: 8px;
+}
+
+.video-comment-like-icon {
+    width: 0.65vw;
+    height: 0.65vw;
+}
+
+.video-comment-like-count {
+    font-size: 0.65vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Comment Sender Section */
+.video-comment-sender.show {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 1vw;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.video-comment-sender {
+    display: none;
+}
+
+.video-comment-sender-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--search-background-color);
+    padding: 0.8vw 1vw;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.video-comment-sender-input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.9vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.video-comment-sender-btn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-comment-sender-btn-icon {
+    width: 1.5vw;
+    height: 1.5vw;
+    color: #838383;
+}
+
+.video-comment-sender-btn-icon.show {
+    color: var(--primary-color);
+}
+
+.controls input[type="range"] {
+    cursor: pointer;
+}
